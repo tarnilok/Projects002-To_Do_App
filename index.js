@@ -1,4 +1,5 @@
 // provides to enter the day which is today
+
 const day = new Date();
 const today = day.getDay();
 const days = [
@@ -19,18 +20,19 @@ addtodo.addEventListener("click", () => {
 
   if (todo != "") {
     //firstly we create the elements we will need
-    var newinput1 = document.createElement("input");
     const newinput2 = document.createElement("input");
+    var newinput1 = document.createElement("input");
+    
     const newinput3 = document.createElement("i");
     const newinput4 = document.createElement("div");
 
     //secondly we set Attributes according to names in css we designed before
-    newinput1.setAttribute("type", "text");
-    newinput1.setAttribute("id", "task");
-    newinput1.setAttribute("value", todo); // we added the task written by the user in input to the new input
     newinput2.setAttribute("type", "checkbox");
     newinput2.setAttribute("name", "checkbox");
     newinput2.setAttribute("id", `checkbox`);
+    newinput1.setAttribute("type", "text");
+    newinput1.setAttribute("id", "task");
+    newinput1.setAttribute("value", todo); // we added the task written by the user in input to the new input
     newinput3.setAttribute("class", "fas fa-trash");
     newinput3.setAttribute("id", `trash`);
     newinput4.setAttribute("id", "container4");
