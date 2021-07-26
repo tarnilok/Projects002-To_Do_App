@@ -17,7 +17,7 @@ body {
 
 }
 
-#container  {
+#container1  {
     background-color: rgb(107, 107, 233);
     width: 60vw;
     aspect-ratio: 9/8;
@@ -29,10 +29,9 @@ body {
     border-radius: 30px;
     padding: 1rem;
 }
-#imager { text-align: center;}
 
 img {
-    width: 25%;
+    width: 15%;
     /*border: 1px solid red;*/
     margin-top: .5rem;
 
@@ -40,12 +39,14 @@ img {
 
 #container2 {
     /*border: 1px solid red;*/
-    text-align: left;
+    text-align: center;
+    width: 100%;
 }
 
 #container3 {
     /*border: 1px solid red;*/
-    text-align: left;
+    display: block;
+    text-align: center;
     margin-top: 1rem;
 }
 
@@ -54,11 +55,10 @@ h1 {
     margin: 1rem 0 1rem 0;
     text-shadow: 1px 1px 3px white;
     letter-spacing: 2px;
-    text-align: center;
     /*border: 1px solid red;*/
 }
 #additem {
-    width: 88%;
+    width: 92.8%;
     height: 3rem;
     border: none;
     font-size: 1.3rem;
@@ -78,13 +78,13 @@ h1 {
 
 #plus {
     font-size: 2.5rem;
-    position: inline;
+    display: inline;
     padding: .23rem;
     vertical-align:middle;
     color: red;
     border-radius: 10px;
     text-shadow: 0 5px 0px blue;
-    margin-left: .5rem;
+    /*border: 1px solid red;*/
 }
 #plus:hover {
     cursor: pointer;
@@ -97,7 +97,7 @@ h1 {
 
 
 #task {
-    width: 25.5rem;
+    width: 85%;
     height: 3rem;
     border: none;
     font-size: 1.3rem;
@@ -149,44 +149,67 @@ h1 {
 }
 
 
-@media screen and (max-width: 320px) {
-    #container { width: 90%; height: 95%; margin: 1rem;}
-    body { font-size: .7rem; align-items:flex-start;}
-    #additem { height: 2rem; width: 80%; font-size: 1rem;}
-    #plus { font-size: 1.8rem;}
-    #task { width: 12rem; height: 2rem; font-size: 1rem;}
-    #checkbox { width: 1.8rem; height: 1.8rem;}
-    #trash { font-size: 1.8rem;}
-}
-
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
-    #container { width: 90%; height: 95%; margin: 1rem;}
-    body { font-size: .7rem; align-items:flex-start;}
-    #additem { height: 2rem; width: 80%; font-size: 1rem;}
-    #plus { font-size: 1.8rem;}
-    #task { width: 12rem; height: 2rem; font-size: 1rem;}
-    #checkbox { width: 1.8rem; height: 1.8rem;}
-    #trash { font-size: 1.8rem;}
+    #container1 { width: 90%; margin: 1rem;}
+    img { width: 25%;}
+    body { font-size: 1rem; align-items:flex-start;}
+    #additem { height: 2.5rem; width: 100%; font-size: 1rem;}
+    #plus { display: block; font-size: 1.8rem;}
+    #task { width: 100%; height: 2rem; font-size: 1rem;}
+    #checkbox { display: inline-block; width: 1.8rem; height: 1.8rem; margin-top: .5rem;}
+    #trash { display: inline-block; font-size: 1.8rem; margin-top: .5rem;}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
+    #container1 { width: 90%; margin: 1rem;}
+    body { font-size: 1.2rem; align-items:flex-start;}
+    #additem { height: 2.5rem; width: 100%; font-size: 1.3rem;}
+    #plus { display: block; font-size: 2rem;}
+    #task { width: 100%; height: 2.5rem; font-size: 1rem;}
+    #checkbox { display: inline-block; width: 2rem; height: 2rem; margin-top: .5rem;}
+    #trash { display: inline-block; font-size: 2rem; margin-top: .5rem;}
 
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
-
+    #container1 { width: 90%; margin: 1rem;}
+    body { font-size: 1.4rem; align-items:flex-start;}
+    #additem { height: 2.7rem; width: 100%; font-size: 1.4rem;}
+    #plus { display: block; font-size: 2.2rem;}
+    #task { width: 100%; height: 2.7rem; font-size: 1.4rem;}
+    #checkbox { display: inline-block; width: 2.2rem; height: 2.2rem; margin-top: .5rem;}
+    #trash { display: inline-block; font-size: 2.2rem; margin-top: .5rem;}
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1200px)
-
-
-@media screen and (min-width: 1200px) and ( max-width: 1919px) {
-    body { font-size: 1.5rem; }
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #container1 { width: 90%; margin: 1.2rem;}
+    body { font-size: 1.5rem; align-items:flex-start;}
+    #additem { height: 3rem; font-size: 1.5rem;}
+    #plus { font-size: 2.5rem;}
+    #task { height: 3rem; font-size: 1.5rem;}
+    #checkbox { width: 2.5rem; height: 2.5rem;}
+    #trash {font-size: 2.5rem;}
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1201px) and ( max-width: 1700px) {
+    #container1 { margin: 1.4rem;}
+    body { font-size: 1.7rem; align-items:flex-start;}
+    #additem { height: 3.2rem; font-size: 1.7rem;}
+    #plus { font-size: 2.2rem;}
+    #task { height: 3.2rem; font-size: 1.7rem;}
+    #checkbox { width: 2.7rem; height: 2.7rem;}
+    #trash {font-size: 2.7rem;}
+}
+
+@media screen and (min-width: 1701px) {
+    #container1 { width: 90%; height: 90vh; margin: 1.5rem;}
+    body { font-size: 2rem; align-items:flex-start;}
+    #additem { height: 3.5rem; font-size: 2rem;}
+    #plus { font-size: 3rem;}
+    #task { height: 3.5rem; font-size: 2rem;}
+    #checkbox { width: 3rem; height: 3rem;}
+    #trash {font-size: 3rem;}
 
 }
 

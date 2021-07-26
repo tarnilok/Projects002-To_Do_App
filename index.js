@@ -35,10 +35,10 @@ addtodo.addEventListener("click", () => {
     newinput1.setAttribute("value", todo); // we added the task written by the user in input to the new input
     newinput3.setAttribute("class", "fas fa-trash");
     newinput3.setAttribute("id", `trash`);
-    newinput4.setAttribute("id", "container4");
+    newinput4.setAttribute("id", "container3");
 
-    //thirdly we append the elements to the container4
-    const taskstack = document.getElementById("container3");
+    //thirdly we append the elements to the container3
+    const taskstack = document.getElementById("container2");
     newinput4.appendChild(newinput1);
     newinput4.appendChild(newinput2);
     newinput4.appendChild(newinput3);
@@ -52,8 +52,7 @@ addtodo.addEventListener("click", () => {
   const taskstacklist = document.querySelectorAll("#task");
   for (let i = 0; i < checked.length; i++) {
     checked[i].addEventListener("click", () => {
-      const item = checked[i].parentElement;
-      item.classList.toggle("done");
+      checked[i].parentElement.classList.toggle("done");
       newinput1.setAttribute("readonly", "readonly");
     });
   }
